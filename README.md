@@ -24,7 +24,7 @@ var mongocon = require("mongocon");
 mongocon.start(__dirname + "/models", true);
 ```
 
-Now in the repl, your models are available to be used. A special $cb function is also defined which will help in displaying and interrogating results
+Now in the repl, your models are available to be used. A special ```$cb``` function is also defined which will help in displaying and interrogating results
 from an async callback.
 
 For example:
