@@ -6,7 +6,7 @@ var fs       = require('fs'),
 
 function Mongocon() {}
 
-Mongocon.prototype.start = function(modelPath, persistentHistory) {
+Mongocon.prototype.start = function(modelPath, persistHistory) {
   var self = this;
 
   // require model files from modelPath
@@ -14,7 +14,7 @@ Mongocon.prototype.start = function(modelPath, persistentHistory) {
 
   var repl = this.repl = replLib.start({});
 
-  if (persistentHistory) {
+  if (persistHistory) {
     // add persistent history support
     require('repl.history')(repl, process.env.HOME + '/.node_history');
   }

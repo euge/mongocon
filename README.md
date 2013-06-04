@@ -11,8 +11,8 @@ In a file of your choosing, simply require mongocon and call start. The start me
 
 ```javascript
 // modelsPath - path of all mongoose models to be required
-// persistentHistory - should command history be persisted to a file?
-function start(modelsPath, persistentHistory)
+// persistHistory - should command history be persisted to a file?
+function start(modelsPath, persistHistory)
 ```
 
 Example:
