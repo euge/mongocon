@@ -1,7 +1,7 @@
 {
   "name": "mongocon",
   "version": "0.0.1",
-  "description": "ERROR: No README.md file found!",
+  "description": "repl for mongoose models",
   "main": "mongocon.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
