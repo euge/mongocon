@@ -1,6 +1,6 @@
 {
   "name": "mongocon",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "repl for mongoose models",
   "main": "mongocon.js",
   "scripts": {

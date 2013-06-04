@@ -15,7 +15,7 @@ In a file of your choosing, simply require mongocon and call start. The start me
 function start(modelsPath, persistHistory)
 ```
 
-Example:
+Example file:
 
 ```javascript
 var mongocon = require("mongocon");
@@ -23,6 +23,18 @@ var mongocon = require("mongocon");
 // start the mongo console, loading models from the "models" folder and persisting the command history
 mongocon.start(__dirname + "/models", true);
 ```
+
+Now in the repl, your models are available to be used. A special $cb function is also defined which will help in displaying and interrogating results
+from an async callback.
+
+For example:
+
+```javascript
+User.find({}, $cb);
+```
+
+As soon as the query results are available, the ```$cb``` callback will be executed and printed to the screen. The repl's standard variable ```_``` will then reference the 
+last received results, while ```_e``` will reference the last error.
 
 Thanks
 ======
